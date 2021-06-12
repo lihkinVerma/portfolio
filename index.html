@@ -32,14 +32,41 @@
 					<div id="mainBody"></div>
 					<script>
 					$(function(){
-					var path = window.location.href;
-					var page = path.split("/").pop();
-					var arg = page.split("?").pop();
-					window.alert( arg );
-					  $("#mainBody").load("homePage.html");
+						var path = window.location.href;
+						var page = path.split("/").pop();
+						var arg = page.split("?").pop();
+						if(arg == 'index.html'){
+							$("#mainBody").load("homePage.html");
+						}
+						else if(arg == 'education'){
+							$("#mainBody").load("academicEducation.html");
+						}
+						else if(arg == 'researchArticles'){
+							$("#mainBody").load("researchArticles.html");
+						}
+						else if(arg == 'workExperience'){
+							$("#mainBody").load("workExperience.html");
+						}
+						else if(arg == 'workshops'){
+							$("#mainBody").load("workshops.html");
+						}
+						else if(arg == 'projects'){
+							$("#mainBody").load("projects.html");
+						}
+						else if(arg == 'achievements'){
+							$("#mainBody").load("achievements.html");
+						}
+						else if(arg == 'blogs'){
+							$("#mainBody").load("blogs.html");
+						}
+						else if(arg == 'extraCurricular'){
+							$("#mainBody").load("extraCurricular.html");
+						}
+						else if(arg == 'contact'){
+							$("#mainBody").load("contact.html");
+						}
 					});
 					</script>
-
 					</div>
 				</div>
 
@@ -57,20 +84,19 @@
 					<header class="major"><h2>Menu</h2></header>
 					<ul>
 						<li><a href="index.html">My brief Intro</a></li>
-						<li><a href="index.html?apple">Academic Education</a></li>
+						<li><a href="index.html?education">Academic Education</a></li>
 						<li><span class="opener">Life's Truth - Experiences</span>
 							<ul>
-								<li><a href="#">Research conducted</a></li>
-								<li><a href="#">Work Experience</a></li>
-								<li><a href="#">Talked at Workshops</a></li>
+								<li><a href="index.html?researchArticles">Research conducted</a></li>
+								<li><a href="index.html?workExperience">Work Experience</a></li>
+								<li><a href="index.html?workshops">Talked at Workshops</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Hands-on experience - Projects</a></li>
-						<li><a href="#">Achievements of past</a></li>
-						<li><a href="#">My Writings</a></li>
-						<li><a href="#">Technical Skills</a></li>
-						<li><a href="#">Downtime Activities</a></li>
-						<li><a href="#">Contact Details</a></li>
+						<li><a href="index.html?projects">Hands-on experience - Projects</a></li>
+						<li><a href="index.html?achievements">Achievements of past</a></li>
+						<li><a href="index.html?blogs">My Writings</a></li>
+						<li><a href="index.html?extraCurricular">Downtime Activities</a></li>
+						<li><a href="index.html?contact">Contact Details</a></li>
 					</ul>
 				</nav>
 
