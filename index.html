@@ -30,9 +30,12 @@
 
 					<!-- Main Body of Page -->
 					<div id="mainBody"></div>
-
 					<script>
 					$(function(){
+					var path = window.location.href;
+					var page = path.split("/").pop();
+					var arg = page.split("?").pop();
+					window.alert( arg );
 					  $("#mainBody").load("homePage.html");
 					});
 					</script>
@@ -54,7 +57,7 @@
 					<header class="major"><h2>Menu</h2></header>
 					<ul>
 						<li><a href="index.html">My brief Intro</a></li>
-						<li><a href="generic.html">Academic Education</a></li>
+						<li><a href="index.html?apple">Academic Education</a></li>
 						<li><span class="opener">Life's Truth - Experiences</span>
 							<ul>
 								<li><a href="#">Research conducted</a></li>
